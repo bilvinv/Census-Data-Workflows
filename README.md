@@ -9,7 +9,7 @@ Both notebooks are designed to be runnable top-to-bottom in Jupyter.
 
 
 ## 1) What you need (data files)
-
+Here the Data is kept in Data.zip 
 Place these files in the **same folder** as the notebooks (repo root recommended):
 
 - `census-bureau.data` — raw data (comma-separated rows)
