@@ -23,14 +23,14 @@ Place these files in the **same folder** as the notebooks (repo root recommended
 ## 2) Environment setup
 
 ### Option A: pip (quick)
-```bash
+
 pip install -U pip
 pip install numpy pandas matplotlib scikit-learn joblib xgboost
-```
+
 
 
 ### Option B: conda
-```bash
+
 conda create -n census-ml python=3.10 -y
 conda activate census-ml
 conda install -y numpy pandas matplotlib scikit-learn joblib
