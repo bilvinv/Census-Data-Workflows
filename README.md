@@ -6,3 +6,32 @@ This repo contains two end-to-end notebooks built on the **Census Bureau / Censu
 - **`Segmentation.ipynb`** — unsupervised learning (K-Means) to create **personas/segments** for marketing-style analysis
 
 Both notebooks are designed to be runnable top-to-bottom in Jupyter.
+
+
+## 1) What you need (data files)
+
+Place these files in the **same folder** as the notebooks (repo root recommended):
+
+- `census-bureau.data` — raw data (comma-separated rows)
+- `census-bureau.columns` — one column name per line
+- (generated) `census-bureau.csv` — created by the classification notebook (or you can create it yourself)
+
+**Important:** `Segmentation.ipynb` expects `census-bureau.csv` to exist.
+
+---
+
+## 2) Environment setup
+
+### Option A: pip (quick)
+```bash
+pip install -U pip
+pip install numpy pandas matplotlib scikit-learn joblib xgboost
+```
+
+
+### Option B: conda
+```bash
+conda create -n census-ml python=3.10 -y
+conda activate census-ml
+conda install -y numpy pandas matplotlib scikit-learn joblib
+conda install -c conda-forge xgboost
